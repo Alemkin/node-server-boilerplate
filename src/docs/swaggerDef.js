@@ -7,13 +7,12 @@ const swaggerDef = {
     title: 'node-express-mongoose-boilerplate API documentation',
     version,
     license: {
-      name: 'MIT',
-      url: 'https://github.com/hagopj13/node-express-mongoose-boilerplate/blob/master/LICENSE'
+      name: 'MIT'
     }
   },
   servers: [
     {
-      url: `http://localhost:${config.port}/v1`
+      url: `${config.domain}:${config.port}/v1`
     }
   ]
 }

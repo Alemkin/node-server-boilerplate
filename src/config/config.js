@@ -28,6 +28,7 @@ if (error) {
 
 module.exports = {
   env: envVars.NODE_ENV,
+  domain: envVars.NODE_ENV === 'production' ? 'https://lemkin-node-service.herokuapp.com' : 'http://localhost',
   port: process.env.PORT || envVars.PORT,
   mongoose: {
     url: envVars.MONGODB_URL + (envVars.NODE_ENV === 'test' ? '-test' : ''),
