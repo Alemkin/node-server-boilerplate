@@ -12,7 +12,7 @@ const swaggerDef = {
   },
   servers: [
     {
-      url: `${config.domain}:${config.port}/v1`
+      url: envVars.NODE_ENV === 'production' ? `${config.domain}/v1` : `${config.domain}:${config.port}/v1`
     }
   ]
 }
