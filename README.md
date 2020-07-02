@@ -350,7 +350,7 @@ The `paginate` method returns a Promise, which fulfills with an object having th
 
 Linting is done using [ESLint](https://eslint.org/).
 
-In this app, ESLint is configured to follow the [Airbnb JavaScript style guide](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) with some modifications.
+In this app, ESLint is configured to follow the StandardJS guide with some modifications.
 
 To modify the ESLint configuration, update the `.eslintrc.json` file.
 
